@@ -22,17 +22,18 @@ public class MainActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progressBar);
         progressBar.setVisibility(View.VISIBLE);
         //open intent
-        new CountDownTimer(2000,1000) {
+        new CountDownTimer(2000,100) {
             @Override
             public void onTick(long l) {
+                Log.d(TAG, "onTick: countdown started");
                 Log.d(TAG, "onTick: "+x++);
             }
 
             @Override
             public void onFinish() {
-
+                Log.d(TAG, "onFinish: goto next activity");
                 startActivity(intent);
             }
-        };
+        }.start();
     }
 }
