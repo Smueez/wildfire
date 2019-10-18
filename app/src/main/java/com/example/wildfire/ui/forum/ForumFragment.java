@@ -1,4 +1,4 @@
-package com.example.wildfire.ui.send;
+package com.example.wildfire.ui.forum;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.wildfire.R;
 
-public class SendFragment extends Fragment {
+public class ForumFragment extends Fragment {
 
-    private SendViewModel sendViewModel;
+    private ForumViewModel forumViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        sendViewModel =
-                ViewModelProviders.of(this).get(SendViewModel.class);
+        forumViewModel =
+                ViewModelProviders.of(this).get(ForumViewModel.class);
         View root = inflater.inflate(R.layout.fragment_forum, container, false);
         final TextView textView = root.findViewById(R.id.text_send);
-        sendViewModel.getText().observe(this, new Observer<String>() {
+        forumViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

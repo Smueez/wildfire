@@ -1,4 +1,4 @@
-package com.example.wildfire.ui.tools;
+package com.example.wildfire.ui.fire_fighters;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.example.wildfire.R;
 
-public class ToolsFragment extends Fragment {
+public class FireFightersFragment extends Fragment {
 
-    private ToolsViewModel toolsViewModel;
+    private FireFightersViewModel fireFightersViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        toolsViewModel =
-                ViewModelProviders.of(this).get(ToolsViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_firefighters, container, false);
+        fireFightersViewModel =
+                ViewModelProviders.of(this).get(FireFightersViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_fire_fighters, container, false);
         final TextView textView = root.findViewById(R.id.text_tools);
-        toolsViewModel.getText().observe(this, new Observer<String>() {
+        fireFightersViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

@@ -1,14 +1,14 @@
-package com.example.wildfire.ui.tools;
+package com.example.wildfire.ui.fire_fighters;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ToolsViewModel extends ViewModel {
+public class FireFightersViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ToolsViewModel() {
+    public FireFightersViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is tools fragment");
     }

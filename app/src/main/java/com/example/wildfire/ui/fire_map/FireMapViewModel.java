@@ -1,16 +1,16 @@
-package com.example.wildfire.ui.gallery;
+package com.example.wildfire.ui.fire_map;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class GalleryViewModel extends ViewModel {
+public class FireMapViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public GalleryViewModel() {
+    public FireMapViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        mText.setValue("This is FireMap fragment");
     }
 
     public LiveData<String> getText() {

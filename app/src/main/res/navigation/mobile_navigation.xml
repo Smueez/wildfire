@@ -3,41 +3,41 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@+id/nav_fire_map">
 
     <fragment
-        android:id="@+id/nav_home"
-        android:name="com.example.wildfire.ui.home.HomeFragment"
-        android:label="@string/menu_home"
-        tools:layout="@layout/fragment_home" />
+        android:id="@+id/nav_fire_map"
+        android:name="com.example.wildfire.ui.report_fire.ReportFireFragment"
+        android:label="FireMap"
+        tools:layout="@layout/fragment_fire_map" />
 
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.wildfire.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_report" />
+        android:id="@+id/nav_report_fire"
+        android:name="com.example.wildfire.ui.fire_map.FireMapFragment"
+        android:label="Report Fire"
+        tools:layout="@layout/fragment_report_fire" />
 
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.wildfire.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_about" />
+        android:id="@+id/nav_forum"
+        android:name="com.example.wildfire.ui.about.AboutFragment"
+        android:label="Forum"
+        tools:layout="@layout/fragment_forum" />
 
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.wildfire.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_firefighters" />
+        android:id="@+id/nav_fire_fighters"
+        android:name="com.example.wildfire.ui.fire_fighters.FireFightersFragment"
+        android:label="Fire Fighters"
+        tools:layout="@layout/fragment_fire_fighters" />
 
     <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.wildfire.ui.share.ShareFragment"
-        android:label="@string/menu_share"
+        android:id="@+id/nav_settings"
+        android:name="com.example.wildfire.ui.settings.SettingsFragment"
+        android:label="Settings"
         tools:layout="@layout/fragment_settings" />
 
     <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.wildfire.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_forum" />
+        android:id="@+id/nav_about"
+        android:name="com.example.wildfire.ui.forum.ForumFragment"
+        android:label="About"
+        tools:layout="@layout/fragment_about" />
 </navigation>

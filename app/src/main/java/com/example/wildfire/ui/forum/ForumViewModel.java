@@ -1,14 +1,14 @@
-package com.example.wildfire.ui.send;
+package com.example.wildfire.ui.forum;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SendViewModel extends ViewModel {
+public class ForumViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SendViewModel() {
+    public ForumViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is send fragment");
     }

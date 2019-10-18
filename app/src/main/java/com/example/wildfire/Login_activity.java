@@ -23,7 +23,7 @@ public class Login_activity extends AppCompatActivity {
     TextView textView_error;
     EditText editText_email,editText_pass;
     String TAG = "login page", email_str,pass_str;
-    Intent intent_map,intent_signup;
+    Intent intent_home,intent_signup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,10 +34,12 @@ public class Login_activity extends AppCompatActivity {
         editText_pass = findViewById(R.id.password);
         textView_error = findViewById(R.id.error);
         intent_signup = new Intent(this,Signup_activity.class);
-
+        intent_home = new Intent(this,HomeActivity.class);
     }
     public void signup(View view){
-        startActivity(intent_signup);
+        startActivity(intent_home);
+        finish();
+       // startActivity(intent_signup);
     }
     public void signin(View view){
         email_str = editText_email.getText().toString().trim();

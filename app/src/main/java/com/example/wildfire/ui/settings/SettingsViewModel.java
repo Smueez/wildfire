@@ -1,14 +1,14 @@
-package com.example.wildfire.ui.share;
+package com.example.wildfire.ui.settings;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class ShareViewModel extends ViewModel {
+public class SettingsViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public ShareViewModel() {
+    public SettingsViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("This is share fragment");
     }
