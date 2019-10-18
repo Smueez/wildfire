@@ -16,19 +16,58 @@
         />
     <Space
         android:layout_width="match_parent"
-        android:layout_height="30dp"/>
-    <Button
+        android:layout_height="20dp"/>
+
+
+    <EditText
+        android:id="@+id/email"
         android:layout_width="350dp"
         android:layout_height="60dp"
         android:layout_gravity="center"
         android:background="@drawable/facebook_login_button"
-        android:text="Continue with facebook"
-        android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="25dp"/>
+        android:hint="Email..."
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:inputType="textEmailAddress"/>
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/facebook_login_button"
+        android:hint="Password..."
+        android:gravity="center"
+        android:text=""
+        android:textSize="20dp"
+        android:inputType="textPassword"/>
     <Space
         android:layout_width="match_parent"
         android:layout_height="15dp"/>
+    <Button
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/google_login_button"
+        android:text="Continue"
+        android:textAllCaps="false"
+        android:textColor="#fff"
+        android:textSize="25dp"
+        android:onClick="signin"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="sprry baaler email diso hauar pola"
+        android:layout_gravity="center"
+        android:textSize="20dp"
+        android:textColor="@color/colorAccent"
+        android:visibility="gone"
+        android:id="@+id/error"/>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,15 +76,21 @@
         android:textColor="#fff"
         android:textSize="18dp"
         />
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="5dp"/>
+
     <Button
-        android:layout_width="350dp"
-        android:layout_height="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/google_login_button"
-        android:text="Continue with Gmail"
+        android:background="@android:color/transparent"
+        android:onClick="signup"
+        android:text="Do not have any account?"
         android:textAllCaps="false"
-        android:textColor="#fff"
-        android:textSize="25dp"/>
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="20dp" />
+
 
 
 </LinearLayout>

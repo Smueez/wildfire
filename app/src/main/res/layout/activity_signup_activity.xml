@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup_activity"
+    android:orientation="vertical"
+    android:background="#1D0B01">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_gravity="center"/>
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/facebook_login_button"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Name..."
+        android:inputType="textPersonName"
+        android:id="@+id/name"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/facebook_login_button"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Email..."
+        android:inputType="textEmailAddress"
+        android:id="@+id/email_signup"
+        android:textSize="20dp"/>
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:background="@drawable/facebook_login_button"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:hint="Password..."
+        android:inputType="textPassword"
+        android:id="@+id/pass_signup"
+        android:textSize="20dp"/>
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+
+    <Button
+        android:layout_width="360dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="@drawable/google_login_button"
+        android:text="Contunue..."
+        android:textColor="@android:color/background_light"
+        android:textSize="18dp"
+        android:onClick="signup"/>
+
+</LinearLayout>
