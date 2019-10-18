@@ -7,13 +7,13 @@
 
     <fragment
         android:id="@+id/nav_fire_map"
-        android:name="com.example.wildfire.ui.report_fire.ReportFireFragment"
+        android:name="com.example.wildfire.ui.fire_map.FireMapFragment"
         android:label="FireMap"
         tools:layout="@layout/fragment_fire_map" />
 
     <fragment
         android:id="@+id/nav_report_fire"
-        android:name="com.example.wildfire.ui.fire_map.FireMapFragment"
+        android:name="com.example.wildfire.ui.report_fire.ReportFireFragment"
         android:label="Report Fire"
         tools:layout="@layout/fragment_report_fire" />
 

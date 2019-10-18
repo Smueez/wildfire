@@ -10,7 +10,7 @@ public class ReportFireViewModel extends ViewModel {
 
     public ReportFireViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is report fire fragment");
+       // mText.setValue("This is report fire fragment");
     }
 
     public LiveData<String> getText() {
