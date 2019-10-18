@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_fire_map"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="FireMap" />
+        <item
+            android:id="@+id/nav_report_fire"
+            android:icon="@drawable/ic_report_black_24dp"
+            android:title="Report Fire" />
+        <item
+            android:id="@+id/nav_forum"
+            android:icon="@drawable/ic_forum_black_24dp"
+            android:title="Fire Forum" />
+        <item
+            android:id="@+id/nav_fire_fighters"
+            android:icon="@drawable/ic_people_black_24dp"
+            android:title="Fire Fighters" />
+    </group>
+
+    <item android:title="Tools">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+            <item
+                android:id="@+id/nav_sign_out"
+                android:icon="@drawable/ic_do_not_disturb_on_black_24dp"
+                android:title="Sign Out" />
+            <item
+                android:id="@+id/nav_about"
+                android:icon="@drawable/ic_info_outline_black_24dp"
+                android:title="About" />
+        </menu>
+    </item>
+
+</menu>
