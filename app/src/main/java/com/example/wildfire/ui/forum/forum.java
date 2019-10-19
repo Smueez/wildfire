@@ -8,6 +8,7 @@ public class forum {
     public String lon;
     public Integer time;
 
+
     forum(){
 
     }
